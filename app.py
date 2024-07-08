@@ -9,6 +9,10 @@ quotes = [
     "The only way to do great work is to love what you do."
 ]
 
+@app.route('/')
+def home():
+    return "Welcome to the Quotes API! Go to /quote to get a random quote."
+
 @app.route('/quote', methods=['GET'])
 def get_quote():
     return jsonify({
