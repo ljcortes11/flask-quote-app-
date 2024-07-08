@@ -8,7 +8,7 @@ RUN pip install flask
 
 EXPOSE 5000 
 
-env NAME World 
+ENV NAME World 
 
 CMD [ "python", "app.py" ]
 
